@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[imp_FileImport] (
+ALTER PROCEDURE [dbo].[util_FileImport] (
 	@FilePath VARCHAR(MAX)
 	,@FileType VARCHAR(5)
 	,@HeaderRowCount BIT = 1
