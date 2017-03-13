@@ -230,7 +230,7 @@ BEGIN
 				+ @crlf + 'SELECT ''CREATOR_NOTE'''
 				+ @crlf + @t + ',''This audit table was created by ' + @UserName + ' in pair with the ' + @TriggerName + ' trigger. '
 					+ 'The trigger will remove itself ' + ISNULL(CONVERT(NVARCHAR(20),@TriggerLifespan),'XXXXX') + ' days after creation '
-					+ 'or if the audit table exceeds ' + ISNULL(CONVERT(NVARCHAR(20),@AuditSizeLimit),'XXXXX') + ' MB.'
+					+ 'or if the audit table exceeds ' + ISNULL(CONVERT(NVARCHAR(20),@AuditSizeLimit),'XXXXX') + ' MB.'''
 				+ @crlf + @t + ',GETDATE()'
 				+ @crlf + @t + ',''' + @UserName + ''''
 				+ @crlf + @t + ',''--DROP TRIGGER ' + @TriggerName + ' DROP TABLE ' + @AuditName + ''''
